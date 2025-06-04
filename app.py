@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load your model
-with open(r'C:\Users\Thomas.Mohlapo\OneDrive - 9475042 - Tshela Health Care\Documents\ML Model Deploy Code\Credit Modelling\model.pkl', 'rb') as f:
+with open(r'model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 @app.route('/', methods=['GET', 'POST'])
